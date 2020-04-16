@@ -1,0 +1,113 @@
+body {
+  height: 2000px;
+}
+
+body .backgroundPicture {
+  z-index: -5;
+  position: absolute;
+  background-image: url("/img/landscape-photography-of-road-and-forest-775203.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  -webkit-filter: contrast(1.3) brightness(0.6);
+          filter: contrast(1.3) brightness(0.6);
+}
+
+body .backgroundPicture::before {
+  background: #e6e6e6;
+  content: "";
+  mix-blend-mode: soft-light;
+}
+
+@media only screen and (min-width: 741px) {
+  body .backgroundPicture {
+    background-image: url("/img/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg");
+    -webkit-filter: contrast(1.8) brightness(0.5);
+            filter: contrast(1.8) brightness(0.5);
+  }
+}
+
+body main {
+  z-index: 5;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body main nav {
+  height: 5vh;
+  width: 100%;
+  background: #0e1d22;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+}
+
+body main nav ul {
+  list-style-type: none;
+  position: absolute;
+  top: 5vh;
+  width: 60%;
+  background: #0e1d22;
+  height: 100vh;
+  display: none;
+}
+
+@media only screen and (min-width: 741px) {
+  body main nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: none;
+    height: inherit;
+  }
+}
+
+body main nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+body main nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 741px) {
+  body main nav .burger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 741px) {
+  body main nav {
+    display: block;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
