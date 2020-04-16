@@ -106,6 +106,34 @@ body main nav .burger div {
   }
 }
 
+body main .titleText {
+  text-align: center;
+  padding: 100px 0px 0px 0px;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+body main .titleText h1 {
+  font-size: 50px;
+}
+
+body main .titleText h3 {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 741px) {
+  body main .titleText h1 {
+    font-size: 80px;
+  }
+  body main .titleText h3 {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
