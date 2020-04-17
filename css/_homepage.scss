@@ -1,4 +1,4 @@
-body{
+body {
     height: 2000px;
 
     .backgroundPicture {
@@ -201,6 +201,43 @@ body{
 
             .portfolioItem3 {
 
+            }
+        }
+    }
+
+    #navSkills {
+        
+        font-family: $font-general;
+        margin-top: 100px;
+        text-align: center;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .container {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            @media only screen and (min-width: 741px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+            .skillComponent {
+                height: 200px;
+
+                @media only screen and (min-width: 741px) {
+                    height: 300px;
+                }
+
+                img {
+                    max-height: 150px;
+                    padding: 15px;
+
+                    @media only screen and (min-width: 741px) {
+                        max-height: 200px;
+                    }
+                }
             }
         }
     }

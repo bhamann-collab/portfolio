@@ -209,6 +209,52 @@ body #navPortfolio .container .portfolioItem .buttons a {
   color: #0e1d22;
 }
 
+body #navSkills {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 100px;
+  text-align: center;
+}
+
+body #navSkills h1 {
+  font-size: 50px;
+}
+
+body #navSkills .container {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 741px) {
+  body #navSkills .container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+body #navSkills .container .skillComponent {
+  height: 200px;
+}
+
+@media only screen and (min-width: 741px) {
+  body #navSkills .container .skillComponent {
+    height: 300px;
+  }
+}
+
+body #navSkills .container .skillComponent img {
+  max-height: 150px;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 741px) {
+  body #navSkills .container .skillComponent img {
+    max-height: 200px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
