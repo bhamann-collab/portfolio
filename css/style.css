@@ -134,8 +134,87 @@ body main .titleText h3 {
   }
 }
 
+body #navPortfolio {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 50px;
+}
+
+body #navPortfolio h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+body #navPortfolio .container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 741px) {
+  body #navPortfolio .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+body #navPortfolio .container .portfolioItem {
+  height: 280px;
+  width: 220px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 5px 20px #0e1d22;
+          box-shadow: 0px 5px 20px #0e1d22;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body #navPortfolio .container .portfolioItem h2 {
+  text-align: center;
+}
+
+body #navPortfolio .container .portfolioItem p {
+  padding: 8px;
+}
+
+body #navPortfolio .container .portfolioItem .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #navPortfolio .container .portfolioItem .buttons a {
+  text-decoration: none;
+  border: 2px solid #0e1d22;
+  border-radius: 8px;
+  margin: 10px;
+  font-size: 20px;
+  padding: 3px;
+  letter-spacing: 0.145em;
+  color: #0e1d22;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -36,7 +36,7 @@ body{
         nav {
             height: 5vh;
             width: 100%;
-            background: #0e1d22;
+            background: $darkColor;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 30px;
@@ -50,7 +50,7 @@ body{
                 position: absolute;
                 top: 5vh;
                 width: 60%;
-                background: #0e1d22;
+                background: $darkColor;
                 height: 100vh;
                 //Going to toggle this display on with javascript
                 display: none;
@@ -127,6 +127,79 @@ body{
                     font-weight: 400;
                     font-size: 30px;  
                 }
+
+            }
+        }
+    }
+    #navPortfolio {
+        font-family: $font-general;
+        margin-top: 50px;
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            //background: tomato;
+            display: grid;
+            grid-template-columns: 100%;
+            justify-items: center;
+            margin-top: 50px;
+
+            @media only screen and (min-width: 741px) {
+            
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .portfolioItem {
+                height: 280px;
+                width: 220px;
+                margin: 10px;
+                box-shadow: 0px 5px 20px $darkColor;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h2 {
+                    text-align: center;
+                }
+
+                p {
+                    padding: 8px;
+                }
+
+                .buttons {
+
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        border: 2px solid $darkColor;
+                        border-radius: 8px;
+                        margin: 10px;
+                        font-size: 20px;
+                        padding: 3px;
+                        letter-spacing: 0.145em;
+                        color: $darkColor;
+                    }
+
+                }
+            }
+
+            .portfolioItem1 {
+                
+            }
+
+            .portfolioItem2 {
+
+            }
+
+            .portfolioItem3 {
 
             }
         }
