@@ -1,5 +1,9 @@
 body {
-    height: 2000px;
+    height: 4100px;
+
+    @media only screen and (min-width: 741px) {
+        height: 3500px;
+    }
 
     .backgroundPicture {
         z-index: -5;
@@ -25,7 +29,7 @@ body {
     }
 
     main {
-        
+        position: relative;
         z-index: 5;
         width: 100%;
         background-repeat: no-repeat;
@@ -133,7 +137,7 @@ body {
     }
     #navPortfolio {
         font-family: $font-general;
-        margin-top: 50px;
+        padding-top: 50px;
 
         h1 {
             text-align: center;
@@ -197,6 +201,7 @@ body {
         
         font-family: $font-general;
         margin-top: 100px;
+        padding-top: 50px;
         text-align: center;
 
         h1 {
@@ -236,7 +241,7 @@ body {
 
         .container {
             max-width: 950px;
-            margin: 100px 15px 15px 15px;
+            margin: 50px 15px 15px 15px;
             padding: 15px;
             border: 3px solid $darkColor;
 
@@ -252,7 +257,9 @@ body {
     }
 
     #navContactMe {
-        margin-top: 100px;
+        position: relative;
+        padding-top: 50px;
+        margin-top: 50px;
         height: 40vh;
         display: flex;
         justify-content: space-around;
@@ -269,6 +276,7 @@ body {
             position: relative;
             height: 50px;
             overflow: hidden;
+            background-color: green;
 
             input {
                 font-size: 20px;

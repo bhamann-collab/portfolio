@@ -9,6 +9,20 @@ $( document ).ready(function() {
         }
     })
 
+    //clicking on nav links
+    $("main").find("a").on("click", shutNavbarHamburger)
+
+        //navigate to another part of the page animation
+        $(document).on("click","a",function(e){
+            e.preventDefault();
+            var id = $(this).attr("href"),
+                topSpace = 30;
+        //alert(id);
+            $('html, body').animate({
+              scrollTop: $(id).offset().top - topSpace
+            }, 800);
+        });
+
     function toggleNavbarHamburger() {
         if(navBar.css("display") === "none"){
             navBar.css("display", "block")
