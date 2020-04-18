@@ -47,7 +47,7 @@ body main nav {
   width: 100%;
   background: #0e1d22;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,11 +70,15 @@ body main nav ul {
 
 @media only screen and (min-width: 741px) {
   body main nav ul {
+    padding: 0 10px 0 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,9 +90,36 @@ body main nav ul {
   }
 }
 
+body main nav ul li {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+body main nav ul li:hover, body main nav ul li:focus {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  opacity: 0.6;
+}
+
 body main nav ul li a {
+  font-size: 35px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+body main nav .burger {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+body main nav .burger:hover, body main nav .burger:focus {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  cursor: pointer;
 }
 
 body main nav .burger div {

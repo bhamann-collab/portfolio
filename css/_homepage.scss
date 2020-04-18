@@ -42,7 +42,7 @@ body {
             width: 100%;
             background: $darkColor;
             font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
+            font-weight: 400;
             font-size: 30px;
             display: flex;
             align-items: center;
@@ -63,8 +63,10 @@ body {
                 
                 //negating the responsive navigation bar
                 @media only screen and (min-width: 741px) {
+                    padding: 0 10px 0 10px;
                     flex-wrap: wrap;
                     justify-content: space-between;
+                    align-items: center;
                     display: flex;
                     position: relative;
                     top: 0;
@@ -74,9 +76,16 @@ body {
                     height: inherit;
                 }
 
-                li {
+                li {    
+                    transition: transform 0.3s ease;
+
+                    &:hover, &:focus {
+                        transform: translateX(5px);
+                        opacity: 0.6;
+                    }
 
                     a{
+                        font-size: 35px;
                         color: #FFFFFF;
                         text-decoration: none;
                     }
@@ -84,8 +93,14 @@ body {
             }
 
             .burger {
-                
 
+                transition: transform 0.3s ease;
+
+                &:hover, &:focus {
+                    transform: translateX(5px);
+                    cursor: pointer;
+                }
+                
                 div {
                     width: 25px;
                     height: 3px;
