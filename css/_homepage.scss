@@ -143,13 +143,17 @@ body {
 
             .container {
                 max-width: 800px;
-                margin-top: 150px;
+                margin-top: 120px;
                 padding: 5px;
                 font-size: 30px;
                 width: 70%;
                 text-align: left;
                 background-color: rgba(0, 0, 0, 0.5);
                 box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+
+                @media only screen and (min-width: 741px) {
+                    margin-top: 150px;
+                }                
 
                 p {
                     opacity: 1;
@@ -244,9 +248,10 @@ body {
         }
 
         .container {
-            margin-top: 40px;
+            margin: 40px 20px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
 
             @media only screen and (min-width: 741px) {
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -259,8 +264,8 @@ body {
                 }
 
                 img {
+                    width: 100%;
                     max-height: 150px;
-                    padding: 15px;
 
                     @media only screen and (min-width: 741px) {
                         max-height: 200px;
