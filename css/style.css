@@ -332,7 +332,6 @@ body #navContactMe {
   position: relative;
   padding-top: 50px;
   margin-top: 50px;
-  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,6 +349,7 @@ body #navContactMe {
 
 body #navContactMe h1 {
   font-size: 50px;
+  text-align: center;
 }
 
 body #navContactMe .form {
