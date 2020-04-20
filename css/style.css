@@ -353,6 +353,7 @@ body #navContactMe h1 {
 }
 
 body #navContactMe .form {
+  margin-top: 10px;
   width: 50%;
   position: relative;
   height: 50px;
