@@ -171,6 +171,15 @@ body main .titleText h3 {
   font-size: 30px;
 }
 
+body main .titleText h3 a span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: initial;
+  color: white;
+}
+
 body main .titleText .container {
   max-width: 800px;
   margin-top: 120px;

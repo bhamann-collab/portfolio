@@ -138,7 +138,16 @@ body {
                 width: 100%;
                 margin-top: 22px;
                 font-weight: 400;
-                font-size: 30px;  
+                font-size: 30px;
+                
+                a {
+
+                    span {
+                        user-select: none; 
+                        cursor: initial;
+                        color: white;
+                    }
+                }
             }
 
             .container {
