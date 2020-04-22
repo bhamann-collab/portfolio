@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    let navBar = $("main").find("ul")
+    let navBar = $("nav").find("ul")
 
     //mobile navigation bar
     $(".burger").on("click", toggleNavbarHamburger);
@@ -10,7 +10,7 @@ $( document ).ready(function() {
     })
 
     //clicking on nav links
-    $("main").find("a").on("click", shutNavbarHamburger)
+    $("nav").find("a").on("click", shutNavbarHamburger)
 
         //navigate to another part of the page animation
         $(document).on("click","a",function(e){

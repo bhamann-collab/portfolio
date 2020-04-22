@@ -34,16 +34,9 @@ body .backgroundPicture::before {
   }
 }
 
-body main {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-body main nav {
-  height: 5vh;
+body nav {
+  z-index: 6;
+  height: 45px;
   width: 100%;
   background: #0e1d22;
   font-family: 'Montserrat', sans-serif;
@@ -58,10 +51,10 @@ body main nav {
   position: fixed;
 }
 
-body main nav ul {
+body nav ul {
   list-style-type: none;
   position: absolute;
-  top: 5vh;
+  top: 45px;
   width: 60%;
   background: #0e1d22;
   height: 100vh;
@@ -69,7 +62,7 @@ body main nav ul {
 }
 
 @media only screen and (min-width: 741px) {
-  body main nav ul {
+  body nav ul {
     padding: 0 10px 0 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -90,39 +83,39 @@ body main nav ul {
   }
 }
 
-body main nav ul li {
+body nav ul li {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-body main nav ul li:hover, body main nav ul li:focus {
+body nav ul li:hover, body nav ul li:focus {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   opacity: 0.6;
 }
 
-body main nav ul li a {
+body nav ul li a {
   font-size: 35px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-body main nav .burger {
+body nav .burger {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-body main nav .burger:hover, body main nav .burger:focus {
+body nav .burger:hover, body nav .burger:focus {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   cursor: pointer;
 }
 
-body main nav .burger div {
+body nav .burger div {
   width: 25px;
   height: 3px;
   background-color: #FFFFFF;
@@ -130,18 +123,26 @@ body main nav .burger div {
 }
 
 @media only screen and (min-width: 741px) {
-  body main nav .burger {
+  body nav .burger {
     display: none;
   }
 }
 
 @media only screen and (min-width: 741px) {
-  body main nav {
+  body nav {
     display: block;
     -webkit-box-align: none;
         -ms-flex-align: none;
             align-items: none;
   }
+}
+
+body main {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 body main .titleText {
