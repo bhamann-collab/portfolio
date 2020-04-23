@@ -121,80 +121,76 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: $font-title;
 
-        .titleText {
-
-            text-align: center;
+    
+        h1 {
             padding: 100px 0px 0px 0px;
-            color: #FFFFFF;
-            font-family: $font-title;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        
+            width: 100%;
+            font-size: 50px;
+        }
+
+        h3 {
+            width: 100%;
+            margin-top: 22px;
+            font-weight: 400;
+            font-size: 26px;
+
+            @media only screen and (min-width: 741px) {
+                font-size: 30px;
+            }
+            
+            a {
+
+                span {
+                    user-select: none; 
+                    cursor: initial;
+                    color: white;
+                }
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            padding: 5px;
+            font-size: 30px;
+            width: 70%;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+
+            @media only screen and (min-width: 741px) {
+                margin-top: 80px;
+            }                
+
+            p {
+                opacity: 1;
+            }
+        }
+
+        @media only screen and (min-width: 741px) {
             h1 {
-                width: 100%;
-                font-size: 50px;
+                font-size: 80px;
             }
 
             h3 {
-                width: 100%;
                 margin-top: 22px;
                 font-weight: 400;
-                font-size: 26px;
-
-                @media only screen and (min-width: 741px) {
-                    font-size: 30px;
-                }
-                
-                a {
-
-                    span {
-                        user-select: none; 
-                        cursor: initial;
-                        color: white;
-                    }
-                }
+                font-size: 30px;  
             }
 
-            .container {
-                max-width: 800px;
-                margin-top: 120px;
-                padding: 5px;
-                font-size: 30px;
-                width: 70%;
-                text-align: left;
-                background-color: rgba(0, 0, 0, 0.5);
-                box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-
-                @media only screen and (min-width: 741px) {
-                    margin-top: 150px;
-                }                
-
-                p {
-                    opacity: 1;
-                }
-            }
-
-            @media only screen and (min-width: 741px) {
-                h1 {
-                    font-size: 80px;
-                }
-    
-                h3 {
-                    margin-top: 22px;
-                    font-weight: 400;
-                    font-size: 30px;  
-                }
-
-            }
         }
+        
         .socialMediaLinks {
             width: 100%;
             display: flex;
             justify-content: center;
             svg {
-                max-width: 240px;
+                max-width: 100px;
                 height: auto;
                 fill: white;
                 margin: 20px;
