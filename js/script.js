@@ -18,7 +18,8 @@ $( document ).ready(function() {
 
         //navigate to another part of the page animation
         $(document).on("click","a",function(e){
-            e.preventDefault();
+            //later: remove line below once confident
+            //e.preventDefault();
             var id = $(this).attr("href"),
                 topSpace = 30;
         //alert(id);

@@ -237,6 +237,15 @@ body main .socialMediaLinks svg {
   height: auto;
   fill: white;
   margin: 20px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+body main .socialMediaLinks svg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body #navPortfolio {

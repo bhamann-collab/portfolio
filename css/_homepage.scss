@@ -194,6 +194,10 @@ body {
                 height: auto;
                 fill: white;
                 margin: 20px;
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
