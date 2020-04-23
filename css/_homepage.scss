@@ -117,7 +117,10 @@ body {
         z-index: 5;
         width: 100%;
         background-repeat: no-repeat;
-        height: 100vh;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .titleText {
 
@@ -138,7 +141,11 @@ body {
                 width: 100%;
                 margin-top: 22px;
                 font-weight: 400;
-                font-size: 30px;
+                font-size: 26px;
+
+                @media only screen and (min-width: 741px) {
+                    font-size: 30px;
+                }
                 
                 a {
 
@@ -180,6 +187,17 @@ body {
                     font-size: 30px;  
                 }
 
+            }
+        }
+        .socialMediaLinks {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            svg {
+                max-width: 240px;
+                height: auto;
+                fill: white;
+                margin: 20px;
             }
         }
     }
