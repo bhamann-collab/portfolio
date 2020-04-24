@@ -355,6 +355,10 @@ body {
                     width: 100%;
                     max-height: 150px;
 
+                    &.extraPadding {
+                        padding-top: 10px;
+                    }
+
                     @media only screen and (min-width: 741px) {
                         max-height: 200px;
                     }

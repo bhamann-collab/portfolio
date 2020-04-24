@@ -439,6 +439,10 @@ body #navSkills .container .skillComponent img {
   max-height: 150px;
 }
 
+body #navSkills .container .skillComponent img.extraPadding {
+  padding-top: 10px;
+}
+
 @media only screen and (min-width: 741px) {
   body #navSkills .container .skillComponent img {
     max-height: 200px;
