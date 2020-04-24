@@ -277,9 +277,9 @@ body #navPortfolio .container {
 }
 
 body #navPortfolio .container .portfolioItem {
-  height: 280px;
-  width: 220px;
-  margin: 10px;
+  height: 320px;
+  width: 280px;
+  margin: 20px;
   -webkit-box-shadow: 0px 5px 20px #0e1d22;
           box-shadow: 0px 5px 20px #0e1d22;
   border-radius: 4px;
@@ -290,13 +290,52 @@ body #navPortfolio .container .portfolioItem {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
 }
 
-body #navPortfolio .container .portfolioItem h2 {
+body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem1 {
+  background-color: #2c3e50;
+}
+
+body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem1::after {
+  display: block;
+  content: "";
+  border-top: 50px solid #2c3e50;
+  border-right: 280px solid transparent;
+  background-color: #fff;
+}
+
+body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem2 {
+  background-color: #2980b9;
+}
+
+body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem2::after {
+  display: block;
+  content: "";
+  border-top: 50px solid #2980b9;
+  border-right: 280px solid transparent;
+  background-color: #fff;
+}
+
+body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem3 {
+  background-color: #2ecc71;
+}
+
+body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem3::after {
+  display: block;
+  content: "";
+  border-top: 50px solid #2ecc71;
+  border-right: 280px solid transparent;
+  background-color: #fff;
+}
+
+body #navPortfolio .container .portfolioItem .titlePortfolio h2 {
+  padding-bottom: 10px;
   text-align: center;
+  color: #fff;
 }
 
 body #navPortfolio .container .portfolioItem p {
@@ -321,6 +360,15 @@ body #navPortfolio .container .portfolioItem .buttons a {
   padding: 3px;
   letter-spacing: 0.145em;
   color: #0e1d22;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body #navPortfolio .container .portfolioItem .buttons a:hover, body #navPortfolio .container .portfolioItem .buttons a:focus {
+  border: 3px solid #95a5a6;
+  color: #95a5a6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body #navSkills {
@@ -420,7 +468,7 @@ body #navContactMe .form input:valid + .label-type .content-name {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
   font-size: 14px;
-  color: #5fa8d3;
+  color: #95a5a6;
 }
 
 body #navContactMe .form input:focus + .label-type::after, body #navContactMe .form input:valid + .label-type::after {
@@ -446,7 +494,7 @@ body #navContactMe .form label::after {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #5fa8d3;
+  border-bottom: 3px solid #95a5a6;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -477,7 +525,8 @@ body #navContactMe a {
 }
 
 body #navContactMe a:hover, body #navContactMe a:focus {
-  border: 3px solid #5fa8d3;
+  border: 3px solid #95a5a6;
+  color: #95a5a6;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
