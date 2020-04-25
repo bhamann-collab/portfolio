@@ -28,6 +28,23 @@ $( document ).ready(function() {
             }, 800);
         });
 
+        //Sending an email
+        $("#submitButton").click(function (event) {
+            console.log("button is being clicked mate");
+
+            var name = $('.name').val();
+            var email = $('.email').val();
+            var message = $('.message').val();
+
+            if(email.length > 5 && email.includes('@') && email.includes('.')) {
+                console.log('Email is valid')
+            } else {
+                event.preventDefault();
+                console.log('Email is not valid')
+            }
+        })
+        //Sending an email
+
     function toggleNavbarHamburger() {
         if(navBar.css("display") === "none"){
             navBar.css("display", "block")

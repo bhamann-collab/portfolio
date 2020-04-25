@@ -120,29 +120,26 @@
             </div>
         </div>
     </section>
-    <section class="navDirect" id="navContactMe">
+    <form action="https://formspree.io/brockohamann@gmail.com" method="POST" class="navDirect" id="navContactMe">
         <h1>Email Me!</h1>
 
-        <div class="form form-name">
-            <input type="text" name="name" autocomplete="off" required />
-            <label for="name" class="label-type">
-                <span class="content-name">Name</span>
-            </label>
-        </div>
         <div class="form form-email">
-            <input type="text" name="email" autocomplete="off" required />
+            <input type="text" name="email" class="email" autocomplete="off" required />
             <label for="email" class="label-type">
                 <span class="content-name">Email</span>
             </label>
         </div>
-        <div class="form form-message">
-            <input type="text" name="message" autocomplete="off" required />
-            <label for="message" class="label-type">
-                <span class="content-name">Message</span>
+        <div class="form form-name">
+            <input type="text" name="subject" class="subject" autocomplete="off" required />
+            <label for="subject" class="label-type">
+                <span class="content-name">Subject</span>
             </label>
         </div>
-        <a href="#">Submit</a>
-    </section>
+        <div class="form-message">
+            <textarea rows="10" cols="30" type="text" name="message" class="message" autocomplete="off" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" id="submitButton" value="send">submit</button>
+    </form>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>

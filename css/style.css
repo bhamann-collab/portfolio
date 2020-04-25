@@ -475,18 +475,24 @@ body #navContactMe h1 {
 
 body #navContactMe .form {
   margin-top: 10px;
-  width: 50%;
+  width: 80%;
   position: relative;
   height: 50px;
   overflow: hidden;
   background-color: green;
 }
 
+@media only screen and (min-width: 741px) {
+  body #navContactMe .form {
+    width: 50%;
+  }
+}
+
 body #navContactMe .form input {
   font-size: 20px;
   width: 100%;
   height: 100%;
-  color: #595f6e;
+  color: black;
   padding-top: 20px;
   border: none;
   outline: none;
@@ -497,7 +503,7 @@ body #navContactMe .form input:valid + .label-type .content-name {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
   font-size: 14px;
-  color: #95a5a6;
+  color: #2980b9;
 }
 
 body #navContactMe .form input:focus + .label-type::after, body #navContactMe .form input:valid + .label-type::after {
@@ -523,7 +529,7 @@ body #navContactMe .form label::after {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #95a5a6;
+  border-bottom: 3px solid #2980b9;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -540,7 +546,40 @@ body #navContactMe .form label .content-name {
   transition: all 0.3s ease;
 }
 
-body #navContactMe a {
+body #navContactMe .form-message {
+  margin-top: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #navContactMe .form-message textarea {
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: 3px black solid;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+
+@media only screen and (min-width: 741px) {
+  body #navContactMe .form-message textarea {
+    width: 50%;
+  }
+}
+
+body #navContactMe .form-message textarea:focus {
+  border-color: #2980b9;
+}
+
+body #navContactMe button {
   margin-top: 20px;
   font-size: 30px;
   padding: 10px;
@@ -553,7 +592,7 @@ body #navContactMe a {
   transition: all .3s ease;
 }
 
-body #navContactMe a:hover, body #navContactMe a:focus {
+body #navContactMe button:hover, body #navContactMe button:focus {
   border: 3px solid #95a5a6;
   color: #95a5a6;
   -webkit-transform: scale(1.1);
