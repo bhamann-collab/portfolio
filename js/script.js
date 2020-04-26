@@ -18,8 +18,6 @@ $( document ).ready(function() {
 
         //navigate to another part of the page animation
         $(document).on("click","a",function(e){
-            //later: remove line below once confident
-            //e.preventDefault();
             var id = $(this).attr("href"),
                 topSpace = 30;
         //alert(id);
@@ -48,8 +46,30 @@ $( document ).ready(function() {
     function toggleNavbarHamburger() {
         if(navBar.css("display") === "none"){
             navBar.css("display", "block")
+            navBar.animate({width: "280px"}, 300)
+
+            // //Rotating hamburger icon 1
+            // $('.line1').animate({  textIndent: 45 }, {
+            //     step: function(now,fx) {
+            //       $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+            //     },
+            //     duration: 300,
+            //     queue: false
+            // },'linear');
+
+
+
+            // //Rotating hamburger icon 3
+            // $('.line3').animate({  textIndent: -45 }, {
+            //     step: function(now,fx) {
+            //         $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+            //     },
+            //     duration: 300,
+            //     queue: false
+            // },'linear');
+
         } else if(navBar.css("display") === "block") {
-            navBar.removeAttr('style');
+            navBar.animate({width: "0px"}, 300, shutNavbarHamburger)
         }
     }
 

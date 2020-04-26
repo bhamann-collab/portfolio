@@ -45,11 +45,12 @@ body {
             list-style-type: none;
             position: absolute;
             top: 45px;
-            width: 60%;
+            width: 0;
             background: $darkColor;
             height: 100vh;
             //Going to toggle this display on with javascript
             display: none;
+            
 
 
             
