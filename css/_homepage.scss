@@ -126,6 +126,18 @@ body {
         text-align: center;
         color: #FFFFFF;
         font-family: $font-title;
+        animation: fadein 1.5s;
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translate(-10px, -3px)
+            }
+            to {
+                opacity: 1;
+                transform: translate(0, 0)
+            }
+        }
 
     
         h1 {
