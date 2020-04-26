@@ -448,9 +448,21 @@ body #navPortfolio .container .portfolioItem .buttons a {
   font-size: 20px;
   padding: 3px;
   letter-spacing: 0.145em;
-  color: #0e1d22;
+  color: white;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+body #navPortfolio .container .portfolioItem .buttons a.project1 {
+  background-color: #2c3e50;
+}
+
+body #navPortfolio .container .portfolioItem .buttons a.project2 {
+  background-color: #2980b9;
+}
+
+body #navPortfolio .container .portfolioItem .buttons a.project3 {
+  background-color: #2ecc71;
 }
 
 body #navPortfolio .container .portfolioItem .buttons a:hover, body #navPortfolio .container .portfolioItem .buttons a:focus {
