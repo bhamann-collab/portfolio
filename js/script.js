@@ -38,7 +38,7 @@ $( document ).ready(function() {
                 console.log('Form is valid')
             } else {
                 event.preventDefault();
-                alert('Email is not valid');
+                alert('Form is not valid');
             }
         })
         //Sending an email

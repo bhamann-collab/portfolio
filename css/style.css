@@ -323,7 +323,7 @@ body #navPortfolio .container {
 }
 
 body #navPortfolio .container .portfolioItem {
-  height: 350px;
+  height: 420px;
   width: 280px;
   margin: 20px;
   -webkit-box-shadow: 0px 5px 20px #0e1d22;
@@ -344,6 +344,7 @@ body #navPortfolio .container .portfolioItem {
 
 @media (min-width: 741px) and (max-width: 950px) {
   body #navPortfolio .container .portfolioItem {
+    height: 520px;
     width: 220px;
     margin: 10px;
   }
@@ -409,7 +410,24 @@ body #navPortfolio .container .portfolioItem .titlePortfolio h2 {
   color: #fff;
 }
 
+body #navPortfolio .container .portfolioItem ul {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  margin: 25px;
+  text-align: left;
+}
+
+body #navPortfolio .container .portfolioItem ul p {
+  font-weight: 400;
+  padding: 0;
+}
+
 body #navPortfolio .container .portfolioItem p {
+  font-weight: 700;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 8px;
 }
 
