@@ -194,7 +194,7 @@ body main .container {
   margin-top: 50px;
   padding: 5px;
   font-size: 30px;
-  width: 70%;
+  width: 85%;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -204,6 +204,7 @@ body main .container {
 @media only screen and (min-width: 741px) {
   body main .container {
     margin-top: 80px;
+    width: 70%;
   }
 }
 
@@ -233,7 +234,7 @@ body main .socialMediaLinks {
 }
 
 body main .socialMediaLinks svg {
-  max-width: 100px;
+  max-width: 70px;
   height: auto;
   fill: white;
   margin: 20px;
@@ -241,6 +242,12 @@ body main .socialMediaLinks svg {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+@media only screen and (min-width: 741px) {
+  body main .socialMediaLinks svg {
+    max-width: 100px;
+  }
 }
 
 body main .socialMediaLinks svg:hover {
@@ -251,6 +258,7 @@ body main .socialMediaLinks svg:hover {
 body #navPortfolio {
   font-family: "Open Sans", sans-serif;
   padding-top: 50px;
+  background-color: #ecf0f1;
 }
 
 body #navPortfolio h1 {
@@ -266,7 +274,7 @@ body #navPortfolio .container {
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   justify-items: center;
-  margin-top: 50px;
+  padding: 25px 0 25px 0;
 }
 
 @media only screen and (min-width: 741px) {
@@ -312,7 +320,7 @@ body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem1::aft
   content: "";
   border-top: 50px solid #2c3e50;
   border-right: 280px solid transparent;
-  background-color: #fff;
+  background-color: #ecf0f1;
 }
 
 @media (min-width: 741px) and (max-width: 950px) {
@@ -330,7 +338,7 @@ body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem2::aft
   content: "";
   border-top: 50px solid #2980b9;
   border-right: 280px solid transparent;
-  background-color: #fff;
+  background-color: #ecf0f1;
 }
 
 @media (min-width: 741px) and (max-width: 950px) {
@@ -348,7 +356,7 @@ body #navPortfolio .container .portfolioItem .titlePortfolio.portfolioItem3::aft
   content: "";
   border-top: 50px solid #2ecc71;
   border-right: 280px solid transparent;
-  background-color: #fff;
+  background-color: #ecf0f1;
 }
 
 @media (min-width: 741px) and (max-width: 950px) {
@@ -390,15 +398,13 @@ body #navPortfolio .container .portfolioItem .buttons a {
 }
 
 body #navPortfolio .container .portfolioItem .buttons a:hover, body #navPortfolio .container .portfolioItem .buttons a:focus {
-  border: 3px solid #95a5a6;
-  color: #95a5a6;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 body #navSkills {
   font-family: "Open Sans", sans-serif;
-  margin-top: 100px;
+  margin: 25px 0 25px 0;
   padding-top: 50px;
   text-align: center;
 }
@@ -466,6 +472,8 @@ body #navContactMe {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Open Sans", sans-serif;
+  background-color: #ecf0f1;
+  padding: 20px 0;
 }
 
 body #navContactMe h1 {
@@ -479,7 +487,6 @@ body #navContactMe .form {
   position: relative;
   height: 50px;
   overflow: hidden;
-  background-color: green;
 }
 
 @media only screen and (min-width: 741px) {
@@ -496,6 +503,7 @@ body #navContactMe .form input {
   padding-top: 20px;
   border: none;
   outline: none;
+  background-color: #ecf0f1;
 }
 
 body #navContactMe .form input:focus + .label-type .content-name,
@@ -567,6 +575,7 @@ body #navContactMe .form-message textarea {
   border: 3px black solid;
   -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
+  background-color: #ecf0f1;
 }
 
 @media only screen and (min-width: 741px) {
@@ -593,8 +602,7 @@ body #navContactMe button {
 }
 
 body #navContactMe button:hover, body #navContactMe button:focus {
-  border: 3px solid #95a5a6;
-  color: #95a5a6;
+  border: 3px solid #2980b9;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

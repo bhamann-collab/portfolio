@@ -159,13 +159,14 @@ body {
             margin-top: 50px;
             padding: 5px;
             font-size: 30px;
-            width: 70%;
+            width: 85%;
             text-align: left;
             background-color: rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 
             @media only screen and (min-width: 741px) {
                 margin-top: 80px;
+                width: 70%;
             }                
 
             p {
@@ -191,11 +192,15 @@ body {
             display: flex;
             justify-content: center;
             svg {
-                max-width: 100px;
+                max-width: 70px;
                 height: auto;
                 fill: white;
                 margin: 20px;
                 transition: transform 0.3s ease;
+
+                @media only screen and (min-width: 741px) {
+                    max-width: 100px;
+                }
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -205,6 +210,7 @@ body {
     #navPortfolio {
         font-family: $font-general;
         padding-top: 50px;
+        background-color: $cloudColor;
 
         h1 {
             text-align: center;
@@ -218,7 +224,7 @@ body {
             display: grid;
             grid-template-columns: 100%;
             justify-items: center;
-            margin-top: 50px;
+            padding: 25px 0 25px 0;
 
             @media only screen and (min-width: 741px) {
             
@@ -249,7 +255,7 @@ body {
                             content: "";
                             border-top: 50px solid #2c3e50;
                             border-right: 280px solid transparent;
-                            background-color: #fff;
+                            background-color: $cloudColor;
                             @media (min-width:741px) and (max-width:950px) {
                                 border-right: 220px solid transparent;
                             }
@@ -264,7 +270,7 @@ body {
                             content: "";
                             border-top: 50px solid #2980b9;
                             border-right: 280px solid transparent;
-                            background-color: #fff;
+                            background-color: $cloudColor;
                             @media (min-width:741px) and (max-width:950px) {
                                 border-right: 220px solid transparent;
                             }
@@ -279,7 +285,7 @@ body {
                             content: "";
                             border-top: 50px solid #2ecc71;
                             border-right: 280px solid transparent;
-                            background-color: #fff;
+                            background-color: $cloudColor;
                             @media (min-width:741px) and (max-width:950px) {
                                 border-right: 220px solid transparent;
                             }
@@ -314,8 +320,6 @@ body {
                         transition: all .3s ease;
     
                         &:hover, &:focus {
-                            border: 3px solid #95a5a6;
-                            color: #95a5a6;
                             transform: scale(1.1);
                         }
                     }
@@ -328,7 +332,7 @@ body {
     #navSkills {
         
         font-family: $font-general;
-        margin-top: 100px;
+        margin: 25px 0 25px 0;
         padding-top: 50px;
         text-align: center;
 
@@ -377,6 +381,8 @@ body {
         align-items: center;
         flex-direction: column;
         font-family: $font-general;
+        background-color: $cloudColor;
+        padding: 20px 0;
 
         h1 {
             font-size: 50px;
@@ -389,7 +395,6 @@ body {
             position: relative;
             height: 50px;
             overflow: hidden;
-            background-color: green;
 
             @media only screen and (min-width: 741px) {
                 width: 50%;
@@ -403,6 +408,7 @@ body {
                 padding-top: 20px;
                 border: none;
                 outline: none;
+                background-color: $cloudColor;
 
                 &:focus + .label-type .content-name,
                  &:valid + .label-type .content-name {
@@ -462,6 +468,7 @@ body {
                 outline: none;
                 border: 3px black solid;
                 transition: border-color 0.3s ease;
+                background-color: $cloudColor;
 
                 @media only screen and (min-width: 741px) {
                     width: 50%;
@@ -484,8 +491,7 @@ body {
             transition: all .3s ease;
     
             &:hover, &:focus {
-                border: 3px solid #95a5a6;
-                color: #95a5a6;
+                border: 3px solid #2980b9;
                 transform: scale(1.1);
             }
         }
