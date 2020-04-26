@@ -154,26 +154,6 @@ body {
             }
         }
 
-        .container {
-            max-width: 800px;
-            margin-top: 50px;
-            padding: 5px;
-            font-size: 30px;
-            width: 85%;
-            text-align: left;
-            background-color: rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-
-            @media only screen and (min-width: 741px) {
-                margin-top: 80px;
-                width: 70%;
-            }                
-
-            p {
-                opacity: 1;
-            }
-        }
-
         @media only screen and (min-width: 741px) {
             h1 {
                 font-size: 80px;
@@ -206,6 +186,22 @@ body {
                 }
             }
         }
+    }
+    #navAboutMe {
+        font-family: $font-general;
+        display: flex;
+        justify-content: center;
+
+        .container {
+            width: 80%;
+            padding: 10px;
+        }
+        
+        h2 {
+            font-size: 26px;
+            font-weight: 400;
+        }    
+        
     }
     #navPortfolio {
         font-family: $font-general;

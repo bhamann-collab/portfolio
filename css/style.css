@@ -189,29 +189,6 @@ body main h3 a span {
   color: white;
 }
 
-body main .container {
-  max-width: 800px;
-  margin-top: 50px;
-  padding: 5px;
-  font-size: 30px;
-  width: 85%;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-@media only screen and (min-width: 741px) {
-  body main .container {
-    margin-top: 80px;
-    width: 70%;
-  }
-}
-
-body main .container p {
-  opacity: 1;
-}
-
 @media only screen and (min-width: 741px) {
   body main h1 {
     font-size: 80px;
@@ -253,6 +230,26 @@ body main .socialMediaLinks svg {
 body main .socialMediaLinks svg:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+body #navAboutMe {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #navAboutMe .container {
+  width: 80%;
+  padding: 10px;
+}
+
+body #navAboutMe h2 {
+  font-size: 26px;
+  font-weight: 400;
 }
 
 body #navPortfolio {
