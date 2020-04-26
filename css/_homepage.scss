@@ -129,22 +129,26 @@ body {
 
     
         h1 {
+            flex-grow: 1;
             padding: 100px 0px 0px 0px;
             width: 100%;
             font-size: 50px;
         }
 
         h3 {
+            flex-grow: 10;
             width: 100%;
             margin-top: 22px;
             font-weight: 400;
-            font-size: 26px;
+            font-size: 28px;
+            letter-spacing: -0.005em;
 
             @media only screen and (min-width: 741px) {
-                font-size: 30px;
+                font-size: 40px;
             }
             
             a {
+                flex-grow: 1;
 
                 span {
                     user-select: none; 
