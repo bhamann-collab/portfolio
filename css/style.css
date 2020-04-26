@@ -1,4 +1,5 @@
 body {
+  background: #ecf0f1;
   height: 4100px;
 }
 
@@ -274,6 +275,7 @@ body main .socialMediaLinks svg:hover {
 }
 
 body #navAboutMe {
+  background: white;
   font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,7 +302,8 @@ body #navPortfolio {
 }
 
 body #navPortfolio h1 {
-  text-align: center;
+  margin: auto;
+  width: 90%;
   font-size: 50px;
 }
 
@@ -472,16 +475,18 @@ body #navPortfolio .container .portfolioItem .buttons a:hover, body #navPortfoli
 
 body #navSkills {
   font-family: "Open Sans", sans-serif;
-  margin: 25px 0 25px 0;
   padding-top: 50px;
-  text-align: center;
+  background-color: white;
 }
 
 body #navSkills h1 {
+  margin: auto;
+  width: 90%;
   font-size: 50px;
 }
 
 body #navSkills .container {
+  text-align: center;
   margin: 40px 20px;
   display: -ms-grid;
   display: grid;
@@ -525,8 +530,6 @@ body #navSkills .container .skillComponent img.extraPadding {
 
 body #navContactMe {
   position: relative;
-  padding-top: 50px;
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,16 +544,17 @@ body #navContactMe {
           flex-direction: column;
   font-family: "Open Sans", sans-serif;
   background-color: #ecf0f1;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 body #navContactMe h1 {
   font-size: 50px;
-  text-align: center;
+  margin: auto;
+  width: 90%;
 }
 
 body #navContactMe .form {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 80%;
   position: relative;
   height: 50px;
@@ -684,5 +688,11 @@ body #navContactMe button:hover, body #navContactMe button:focus {
 
 a {
   text-decoration: none;
+}
+
+.headingLine {
+  width: 90%;
+  border-bottom: 5px solid #2980b9;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

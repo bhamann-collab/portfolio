@@ -1,4 +1,5 @@
 body {
+    background: $cloudColor;
     height: 4100px;
 
     @media only screen and (min-width: 741px) {
@@ -204,6 +205,7 @@ body {
         }
     }
     #navAboutMe {
+        background: white;
         font-family: $font-general;
         display: flex;
         justify-content: center;
@@ -225,7 +227,8 @@ body {
         background-color: $cloudColor;
 
         h1 {
-            text-align: center;
+            margin: auto;
+            width: 90%;
             font-size: 50px;
         }
 
@@ -371,15 +374,18 @@ body {
     #navSkills {
         
         font-family: $font-general;
-        margin: 25px 0 25px 0;
+        //margin: 25px 0 0 0;
         padding-top: 50px;
-        text-align: center;
+        background-color: white;
 
         h1 {
+            margin: auto;
+            width: 90%;
             font-size: 50px;
         }
 
         .container {
+            text-align: center;
             margin: 40px 20px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -413,23 +419,22 @@ body {
 
     #navContactMe {
         position: relative;
-        padding-top: 50px;
-        margin-top: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
         font-family: $font-general;
         background-color: $cloudColor;
-        padding: 20px 0;
+        padding: 25px 0;
 
         h1 {
             font-size: 50px;
-            text-align: center;
+            margin: auto;
+            width: 90%;
         }
 
         .form {
-            margin-top: 10px;
+            margin-top: 20px;
             width: 80%;
             position: relative;
             height: 50px;
