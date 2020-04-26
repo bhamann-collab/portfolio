@@ -30,15 +30,15 @@ $( document ).ready(function() {
         $("#submitButton").click(function (event) {
             console.log("button is being clicked mate");
 
-            var name = $('.name').val();
             var email = $('.email').val();
+            var subject = $('.subject').val();
             var message = $('.message').val();
 
-            if(email.length > 5 && email.includes('@') && email.includes('.')) {
-                console.log('Email is valid')
+            if(email.length > 5 && email.includes('@') && email.includes('.') && subject.length > 2 && message.length > 10) {
+                console.log('Form is valid')
             } else {
                 event.preventDefault();
-                console.log('Email is not valid')
+                alert('Email is not valid');
             }
         })
         //Sending an email
@@ -47,26 +47,6 @@ $( document ).ready(function() {
         if(navBar.css("display") === "none"){
             navBar.css("display", "block")
             navBar.animate({width: "280px"}, 300)
-
-            // //Rotating hamburger icon 1
-            // $('.line1').animate({  textIndent: 45 }, {
-            //     step: function(now,fx) {
-            //       $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-            //     },
-            //     duration: 300,
-            //     queue: false
-            // },'linear');
-
-
-
-            // //Rotating hamburger icon 3
-            // $('.line3').animate({  textIndent: -45 }, {
-            //     step: function(now,fx) {
-            //         $(this).css('-webkit-transform','rotate('+now+'deg)'); 
-            //     },
-            //     duration: 300,
-            //     queue: false
-            // },'linear');
 
         } else if(navBar.css("display") === "block") {
             navBar.animate({width: "0px"}, 300, shutNavbarHamburger)
