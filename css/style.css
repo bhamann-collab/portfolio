@@ -417,7 +417,7 @@ body #navPortfolio .container .portfolioItem ul {
   -webkit-box-flex: 10;
       -ms-flex-positive: 10;
           flex-grow: 10;
-  margin: 25px;
+  margin: 0px 25px 25px 25px;
   text-align: left;
 }
 
