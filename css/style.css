@@ -251,7 +251,7 @@ body main .socialMediaLinks {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 @media only screen and (min-width: 741px) {
