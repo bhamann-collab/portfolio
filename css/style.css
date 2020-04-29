@@ -101,6 +101,7 @@ body nav ul li a {
   font-size: 35px;
   color: #FFFFFF;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 body nav .burger {
@@ -250,6 +251,13 @@ body main .socialMediaLinks {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 741px) {
+  body main .socialMediaLinks {
+    padding-bottom: 0px;
+  }
 }
 
 body main .socialMediaLinks svg {
