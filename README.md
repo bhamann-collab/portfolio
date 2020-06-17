@@ -1,10 +1,12 @@
 # Brock Hamann - Portfolio  
 
-View website here: https://bhamann-collab.github.io/portfolio/
+View Updated website here: https://portfolio-123456.herokuapp.com/
+
+View website here: https://bhamann.live
 
 ## Build Status
 
-Release 0.1
+Release 0.5
 
 Curently under review, ready to be deployed with a different domain name soon
 
