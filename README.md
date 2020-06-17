@@ -2,7 +2,7 @@
 
 View Updated website here: https://portfolio-123456.herokuapp.com/
 
-View website here: https://bhamann.live
+Website will be completed here: https://bhamann.live
 
 ## Build Status
 
