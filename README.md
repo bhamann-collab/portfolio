@@ -1,6 +1,6 @@
 # Brock Hamann - Portfolio  
 
-View Updated website here: https://portfolio-123456.herokuapp.com/
+View Updated website here: https://bhamann.herokuapp.com/
 
 Website will be completed here: https://bhamann.live
 
