@@ -254,7 +254,7 @@ body {
             }
 
             .portfolioItem {
-                height: 450px;
+                height: 500px;
                 width: 280px;
                 margin: 20px;
                 box-shadow: 0px 5px 20px $darkColor;
@@ -265,7 +265,7 @@ body {
                 text-align: center;
 
                 @media (min-width:741px) and (max-width:950px) {
-                    height: 520px;
+                    height: 630px;
                     width: 220px;
                     margin: 10px;
                 }
